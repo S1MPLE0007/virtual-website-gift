@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    font-family: cursive;
+}
+
+.title{
+        font-size: 80px;
+        color: #fff;
+        text-align: center;
+        animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+.sub-title{
+    color: whitesmoke;
+    margin: 0;
+    margin-left: 30%;
+    margin-top: 10%;
+    padding: 5px;
+    font-weight: bolder;
+    font-size: 150%;
+}
+
+.button {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: 1%;
+  
+    gap: 3rem;
+}
+
+.btn {
+    padding: 1.5rem 2.5rem;
+    border: none;
+    border-radius: 4px;
+  
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn--secret1 {
+    background-color: #ff0ceb;
+  }
+  
+  .btn--secret2 {
+    background-color: #f71818;
+}
+
+.left, .right {
+    float: left;
+    width: 20%; 
+  }
+  
+  .main {
+    float: left;
+    width: 60%; 
+  }
+
+@media screen and (max-width: 500px) {
+    .left, .main, .right {
+      width: 100%; 
+    }
+}
+
+
+
